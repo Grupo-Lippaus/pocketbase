@@ -34,6 +34,7 @@ RUN apk update && apk add ca-certificates && rm -rf /var/cache/apk/*
 
 EXPOSE 8090
 
+
 COPY --from=download /pocketbase /usr/local/bin/pocketbase
 
 VOLUME /pb_data
